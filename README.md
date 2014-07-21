@@ -1,7 +1,7 @@
 wp-get-archives-with-image
 ==========================
 
-** phpdoc is notyet!**
+**phpdoc is notyet!**
 
 
 ## Usage 
@@ -27,10 +27,44 @@ format has only 2 pattern : html and custom.
 
 ## default usage
 
-@todo
+```php
+$args = array(
+
+		'type' => 'monthly', 
+
+    'limit' => '',
+
+		'format' => 'html', 
+
+    'before' => '',
+
+		'after' => '', 
+
+    'show_post_count' => false,
+
+		'echo' => 1, 
+
+    'order' => 'DESC',
+		
+		'html' => '<img src="%1$s" alt="%2$s>', 
+		
+
+	);
+```
 
 ## Examples
 
+```php
+wp_get_archives_image(
+ array(
+ 'type'=>'yearly',
+ 'limit'=>10,
+ 'format'=>'custom',
+ 'html'=>'<img src="http://example.com/images/hoge.jpg" width="100" alt="%2$s" />'
+  )
+ );
+```
+
+
+
 @todo
-
-
