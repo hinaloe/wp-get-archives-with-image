@@ -329,7 +329,7 @@ function wp_get_archives_image( $args = '' ) {
 
 				$text = sprintf( __( '%1$s %2$d' ), $wp_locale->get_month( $result->month ), $result->year );
 				
-				$img = sprintf( $r['html'] , $result->year.$result->month , $text );
+				$img = sprintf( $r['html'] , sprintf( '%1$d%2$02d', $result->year,$result->month) , $text );
 
 				if ( $r['show_post_count'] ) {
 
@@ -414,7 +414,7 @@ function wp_get_archives_image( $args = '' ) {
 
 				$text = mysql2date( $archive_day_date_format, $date );
 				
-				$img = sprintf( $r['html'] , $result->year.$result->month.$result->dayofmonth , $text );
+				$img = sprintf( $r['html'] , mysql2date( "Ymd" , $date ) , $text );
 
 
 				if ( $r['show_post_count'] ) {
