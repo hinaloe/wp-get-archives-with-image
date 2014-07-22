@@ -46,7 +46,7 @@ $args = array(
 
     'order' => 'DESC',
 		
-		'html' => '<img src="%1$s" alt="%2$s>', 
+		'html' => '<img src="%1$s" alt="%2$s">', 
 		
 
 	);
@@ -72,4 +72,3 @@ wp_get_archives_image(
 ## Attention!!
 
 *If you use this function in your plugins or themes, you must add the plefix!*
- 

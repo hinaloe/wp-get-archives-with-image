@@ -179,7 +179,7 @@ function wp_get_archives_image( $args = '' ) {
 
 		'echo' => 1, 'order' => 'DESC',
 		
-		'html' => '<img src="%1$s" alt="%2$s>', 
+		'html' => '<img src="%1$s" alt="%2$s">', 
 		
 
 	);
